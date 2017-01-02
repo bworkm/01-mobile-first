@@ -61,11 +61,28 @@
   text-decoration: none;
 }
 
-/* TODO: Now add styles for how things should look on a larger screen,
-   (hint: min is in!):
-@media screen...
-         - Hide the hamburger.
-         - Display our unordered list (aka our nav links).
-         - The main-nav should be all on one row, with padding spaced better
-           for a larger screen.
+/* DONE: Now add styles for how things should look on a larger screen,
+ (hint: min is in!):
+ - Hide the hamburger.
+ - Display our unordered list (aka our nav links).
+ - The main-nav should be all on one row, with padding spaced better
+   for a larger screen.
 */
+@media screen and (min-width: 760px) {
+  .icon-menu {
+    display: none;
+  }
+  .main-nav ul {
+    display: block;
+    text-align: center;
+
+  }
+  .main-nav li {
+    width: 25%;
+    display: inline;
+    margin-right: 12%;
+  }
+  .main-nav li:last-child {
+    margin-right: 0;
+  }
+}
